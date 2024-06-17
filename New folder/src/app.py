@@ -8,9 +8,9 @@ from scipy.spatial.distance import cdist
 
 
 
-jk = glob.glob('../*')
-op = [re.sub('..\\\\', '', i) for i in jk]
-# print(jk)
+jk = glob.glob('New folder/*')
+op = [re.sub('.*\\\\', '', i) for i in jk]
+# print(op)
 aa = re.sub( '_..csv','',op[0])
 oppo = [re.sub('_..csv','',i) for i in op]
 index_list = []
