@@ -8,11 +8,12 @@ from scipy.spatial.distance import cdist
 
 
 
-jk = glob.glob('*')
-print(jk)
+# jk = glob.glob('*')
+with open('names.txt','r') as f:
+    jk = [i.rstrip() for i in f]
+
 op = [re.sub('.*\\\\', '', i) for i in jk]
-# print(op)
-aa = re.sub( '_..csv','',op[0])
+# aa = re.sub( '_..csv','',op[0])
 oppo = [re.sub('_..csv','',i) for i in op]
 index_list = []
 for i in range(len(oppo)):
