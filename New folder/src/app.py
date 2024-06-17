@@ -23,7 +23,7 @@ for i in range(len(oppo)):
 
 
 app = Dash( ) 
-
+server = app.server
 app.layout = [
     
     html.Div(children = 'Visualization'),
