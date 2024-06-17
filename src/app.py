@@ -8,7 +8,7 @@ from scipy.spatial.distance import cdist
 
 
 
-jk = glob.glob('New folder/*')
+jk = glob.glob('*')
 print(jk)
 op = [re.sub('.*\\\\', '', i) for i in jk]
 # print(op)
