@@ -9,6 +9,7 @@ from scipy.spatial.distance import cdist
 
 
 jk = glob.glob('New folder/*')
+print(jk)
 op = [re.sub('.*\\\\', '', i) for i in jk]
 # print(op)
 aa = re.sub( '_..csv','',op[0])
