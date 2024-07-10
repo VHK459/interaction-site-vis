@@ -30,7 +30,7 @@ app.layout = [
     
     html.Div(children = 'Visualization'),
     html.Hr(),
-    dcc.RadioItems(options = np.arange(len(op)), value = 1, id = 'radio-item-controls', inline = True),
+    dcc.RadioItems(options = np.arange(len(index_list)), value = 1, id = 'radio-item-controls', inline = True),
     dcc.Graph(figure = {}, id = 'figure-output-control')
 ]
 
